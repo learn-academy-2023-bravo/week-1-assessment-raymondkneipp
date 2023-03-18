@@ -112,7 +112,6 @@ const boilingPoint = (temp, unit='F') => {
             } else {
                 return `${temp} ${unit} below boiling point`
             }
-            break
         case 'C':
             if (temp > celsiusBoilingPoint) {
                 return `${temp} ${unit} is above boiling point`
@@ -121,7 +120,6 @@ const boilingPoint = (temp, unit='F') => {
             } else {
                 return `${temp} ${unit} below boiling point`
             }
-            break
         case 'K':
             if (temp > kelvinBoilingPoint) {
                 return `${temp} ${unit} is above boiling point`
@@ -130,7 +128,6 @@ const boilingPoint = (temp, unit='F') => {
             } else {
                 return `${temp} ${unit} below boiling point`
             }
-            break
         default:
             throw new TypeError('unit is invalid')
     }
